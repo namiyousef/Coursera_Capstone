@@ -1,0 +1,104 @@
+Machine Learning
+
+
+Classification
+K Nearest Neighbour
+Decision Tree Classifier
+
+Random Forest Classifier
+
+Clustering
+Classification
+
+Classification
+
+
+
+Questions that crossed my mind:
+What is the difference between the use cases of MinMax scaler and StandardScaler?
+When would one use the mean / standard deviation scaler?
+Are there any other types of scalers?
+How to achieve ether different forms of binning in Python? (refer to your statistics report for the different types)
+
+References:
+
+Read:
+Currently none
+
+Skewness and normalisation:
+https://stats.stackexchange.com/questions/296990/transforming-positively-skewed-data-with-positive-and-negative-values 
+https://stats.stackexchange.com/questions/78063/replacing-outliers-with-mean/78067#78067
+https://stats.stackexchange.com/questions/179871/regarding-how-to-transform-leptokurtic-distribution-to-normality/179884#179884
+https://medium.com/@TheDataGyan/day-8-data-transformation-skewness-normalization-and-much-more-4c144d370e55
+https://www.siyavula.com/read/maths/grade-11/statistics/11-statistics-05
+https://scikit-learn.org/stable/auto_examples/preprocessing/plot_all_scaling.html
+https://www.statisticssolutions.com/transforming-data-for-normality/
+https://datascience.stackexchange.com/questions/20237/why-do-we-convert-skewed-data-into-a-normal-distribution
+https://machinelearningmastery.com/quantile-transforms-for-machine-learning/
+
+
+Facebook prophet:
+https://facebook.github.io/prophet/docs/non-daily_data.html
+https://mode.com/example-gallery/forecasting_prophet_python_cookbook/
+https://towardsdatascience.com/a-quick-start-of-time-series-forecasting-with-a-practical-example-using-fb-prophet-31c4447a2274
+https://towardsdatascience.com/implementing-facebook-prophet-efficiently-c241305405a3
+https://www.analyticsvidhya.com/blog/2018/05/generate-accurate-forecasts-facebook-prophet-python-r/
+https://facebook.github.io/prophet/docs/quick_start.html
+https://towardsdatascience.com/anomaly-detection-time-series-4c661f6f165f
+https://facebook.github.io/prophet/docs/seasonality,_holiday_effects,_and_regressors.html
+https://towardsdatascience.com/serving-prophet-model-with-flask-predicting-future-1896986da05f
+https://towardsdatascience.com/prophet-vs-deepar-forecasting-food-demand-2fdebfb8d282
+
+
+Jupyter notebook:
+https://nbviewer.jupyter.org/github/ipython/ipython/blob/2.x/examples/Notebook/Display%20System.ipynb#LaTeX
+
+Mathematical concepts;
+
+https://www.itl.nist.gov/div898/software/dataplot/refman2/auxillar/minkdist.htm 
+
+Model deployment
+https://towardsdatascience.com/cortex-v0-13-8cf8c0f94edd
+https://www.kdnuggets.com/2019/06/approaches-deploying-machine-learning-production.html
+https://www.kdnuggets.com/2019/08/nvidia-deploy-deep-learning-models-production.html
+https://www.vision-systems.com/boards-software/article/14175365/five-steps-for-building-and-deploying-a-deep-learning-neural-network
+https://mlinproduction.com/software-interfaces-for-machine-learning-deployment-deployment-series-02/
+
+Anomaly detection
+https://github.com/yzhao062/anomaly-detection-resources#34-time-series-outlier-detection
+https://towardsdatascience.com/effective-approaches-for-time-series-anomaly-detection-9485b40077f1
+https://datascience.stackexchange.com/questions/32126/looking-for-good-package-for-anomaly-detection-in-time-series
+https://github.com/twitter/AnomalyDetection
+https://blog.statsbot.co/time-series-anomaly-detection-algorithms-1cef5519aef2
+https://towardsdatascience.com/machine-learning-for-anomaly-detection-and-condition-monitoring-d4614e7de770
+https://towardsdatascience.com/isolation-forest-with-statistical-rules-4dd27dad2da9
+https://blog.paperspace.com/anomaly-detection-isolation-forest/
+
+CausalImpact 
+https://blog.exploratory.io/an-introduction-to-causal-impact-analysis-a57bce54078e
+
+Image recognition
+https://medium.com/@jaafarbenabderrazak.info/ocr-with-tesseract-opencv-and-python-d2c4ec097866
+https://towardsdatascience.com/image-enhancement-techniques-using-opencv-and-python-9191d5c30d45
+https://medium.com/better-programming/beginners-guide-to-tesseract-ocr-using-python-10ecbb426c3d
+
+
+
+Python
+https://medium.com/swlh/classes-subclasses-in-python-12b6013d9f3
+https://medium.com/quick-code/understanding-self-in-python-a3704319e5f0
+https://treyhunner.com/2018/10/asterisks-in-python-what-they-are-and-how-to-use-them/
+https://www.digitalocean.com/community/tutorials/how-to-use-args-and-kwargs-in-python-3
+https://stackoverflow.com/questions/9539921/how-do-i-create-a-python-function-with-optional-arguments/9539945
+
+
+AI Courses
+univ.ai
+Nguyen course on Deep learning on Coursera
+Nguyen course on machine learning on Coursera
+
+
+
+
+FOR WEBSRAPING:
+BeautifulSoup
