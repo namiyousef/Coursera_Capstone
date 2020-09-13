@@ -13,13 +13,26 @@ College London?**
 
 **Data[ ]{.Apple-tab-span}5**
 
-**Methodology[ ]{.Apple-tab-span}6**
+1.  **Foursquare[ ]{.Apple-tab-span}5**
+2.  **Rent Barometer[ ]{.Apple-tab-span}5**
+3.  **Office of National Statistics (Population)[ ]{.Apple-tab-span}5**
+4.  **UK Crime Stats[ ]{.Apple-tab-span}6**
+5.  **Google Maps[ ]{.Apple-tab-span}6**
 
-**Results[ ]{.Apple-tab-span}7**
+**Methodology[ ]{.Apple-tab-span}7**
 
-**Discussion[ ]{.Apple-tab-span}8**
+**Results[ ]{.Apple-tab-span}8**
 
-**Conclusion[ ]{.Apple-tab-span}9**
+**Discussion[ ]{.Apple-tab-span}9**
+
+**Conclusion[ ]{.Apple-tab-span}10**
+
+**Further Work[ ]{.Apple-tab-span}11**
+
+**Resources[ ]{.Apple-tab-span}12**
+
+1.  **Data Sources[ ]{.Apple-tab-span}12**
+2.  **Other[ ]{.Apple-tab-span}12**
 
 \
 
@@ -62,15 +75,170 @@ This report aims to explore this problem in more detail and finding a
 solution.
 
 1.  **Literature Review**
-2.  **Scope**
 
-**[ ]{.Apple-tab-span}2.[ ]{.Apple-tab-span}DataMethodology**
+Definitions:
+
+a neighbourhood is referred to as a London postcode district.
+
+Parameters to consider:
+
+-   []{.s2}Average house price per unit area in the area
+-   []{.s2}Trendiness in the areas
+-   []{.s2}Availability of restaurants / nightlife
+-   []{.s2}Distance from uni (accounting for walk vs. cycle vs. bus vs.
+    train)
+-   []{.s2}Average age in the area
+-   []{.s2}Crime rate
+-   []{.s2}Closeness of supermarkets
+
+1.  **Scope**
+
+This project has two objectives:
+
+1.  Cluster the neighbourhoods to find any that are similar, and thus
+    'appropriate' for students
+2.  Create a model that quantifies neighbourhoods, giving them a score
+    for how suitable they are for students. This model should be
+    deployable such that a student could enter an address that they are
+    considering, and it would give them a score, as well as highlight
+    the key parameters affecting that score (for example, high crime
+    rate).
+
+```{=html}
+<!-- -->
+```
+1.  []{.s3}Note that this project is partly motivated by the final
+    assignment (Capstone Project) on the IBM Professional Data Science
+    Certificate. **For peer assessors, please only consider Objective 1
+    (Clustering) as a submission for the Capstone.**[**Data**]{.s3}
+
+\
+
+This project requires more data than that available from
+Foursquare.[ ]{.Apple-converted-space}
+
+A description of the data required for this project will be given here,
+as well as links. Note that the methodology for how the data will be
+used is given under **Methodology**.
+
+-   []{.s2}**Foursquare:** will be used for exploring venues in postal
+    districts, as well as trendiness
+-   []{.s2}**Rent Barometer:** includes data on average rent prices
+    ([![equation.pdf](file:///equation.pdf)]{.s4}) in London by postcode
+    districts for different property types (Studios, 1---5
+    beds)[ ]{.Apple-converted-space}
+-   []{.s2}**Office of National Statistics (Population):** includes age
+    data (male and female) by districts for different years
+-   []{.s2}**UK Crime Stats:** includes crimes (of different types) per
+    district, as well as information on districts (such as population
+    and land area)
+-   []{.s2}**Google Maps:** will be used to explore distances and
+    durations from locations to Imperial College
+
+Note that links tot he datasets of Rent Barometer, Office of National
+Statistics and UK Crime Stats are given under **Data Sources**. Both
+Google Maps and Foursquare data are accessed through API's, and as such
+have no 'datasets'.[ ]{.Apple-converted-space}
+
+\
+
+The next subsections will discuss the datasets in more detail in terms
+of the parameters that they contain and how they will be used to achieve
+the objectives of the project.
+
+\
+
+1.  **Foursquare**
+
+Foursquare gives developers a certain number of calls (cite Alex Akklson
+from IBM) to retrieve information regarding
+venues.[ ]{.Apple-converted-space}
+
+This project will use the following approaches:
+
+-   []{.s2}Postcode districts will be explored for specific venues
+    relevant to students, these include: nightclubs, bars, pubs,
+    restaurants, coffee shops and grocery stores.
+-   []{.s2}The 'trending' feature in Foursquare will be used to gather
+    information about the trendiness of a postcode district at different
+    times of the day.
+
+The data described above will be used to create 'metrics', for example
+how 'trendy' the area is, or what the 'nightlife' score is. This is
+described in more detail under the
+methodology.[ ]{.Apple-converted-space}
+
+1.  **Rent Barometer**
+
+The rent barometer dataset is a webpage containing tables which present
+information on weekly rent for different property types in each postcode
+district.[ ]{.Apple-converted-space}
+
+Webscraping will be used to extract this information. There are some
+missing values in the datasets, and these will be approximated by
+suitable models.
+
+The data collected here would also be converted to a metric relevant to
+students.
+
+1.  **Office of National Statistics (Population)**
+
+This dataset is a .CSV file, and thus easily accessible.
+
+It's important to note that the data is outdated, containing data from
+2008.
+
+This data will be used to create a metric for the average age in each
+postcode district.
+
+1.  **UK Crime Stats**
+
+The UK crime statistics can be exported as a .XLS file. It will be used
+to determine a 'safety score' for each postcode district.
+
+1.  **Google Maps**
+
+Google gives developers access to Map data.[ ]{.Apple-converted-space}
+
+Google maps will be used to determine average durations from postcode
+districts to Imperial College London (bus, tube, walk and cycle).
+
+This data will be used to create a 'closeness score' for each postcode
+district.
+
+\
+
+\
+
+\
+
+[]{.s5}**[ ]{.Apple-tab-span}3.[ ]{.Apple-tab-span}Methodology**
 
 **[ ]{.Apple-tab-span}4.[ ]{.Apple-tab-span}Results**
 
 **[ ]{.Apple-tab-span}5.[ ]{.Apple-tab-span}Discussion**
 
-**[ ]{.Apple-tab-span}6.[ ]{.Apple-tab-span}Conclusion**
+**[ ]{.Apple-tab-span}6.[ ]{.Apple-tab-span}ConclusionFurther Work**
+
+\
+
+\
+
+[]{.s5}**[ ]{.Apple-tab-span}8.[ ]{.Apple-tab-span}Resources**
+
+1.  **Data Sources**
+
+[<https://www.rentbarometer.com/london/all-prices/by-postcode.html#BR>]{.s1}
+
+[<https://data.london.gov.uk/dataset/office-national-statistics-ons-population-estimates-borough>]{.s1}
+
+[<https://www.ukcrimestats.com/Postcode_Districts/>]{.s1}
+
+[<https://developers.google.com/maps/documentation/distance-matrix/overview>]{.s1}[ ]{.Apple-converted-space}
+
+\
+
+1.  **Other**
 
 \
 
