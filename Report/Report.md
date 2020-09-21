@@ -129,9 +129,9 @@ used is given under **Methodology**.
     beds)[ ]{.Apple-converted-space}
 -   []{.s2}**Office of National Statistics (Population):** includes age
     data (male and female) by districts for different years
--   []{.s2}**UK Crime Stats:** includes crimes (of different types) per
-    district, as well as information on districts (such as population
-    and land area)
+-   []{.s2}**Police Crime Data:** includes crimes (of different types)
+    per district, as well as information on districts (such as
+    population and land area)
 -   []{.s2}**Google Maps:** will be used to explore distances and
     durations from locations to Imperial College
 
@@ -208,7 +208,8 @@ district.
 
 \
 
-\
+**NOTE:** DATA WRITTEN HERE IS OUTDATED. MUCH OF IT CANNOT BE USED.
+WORTH FINDING NEW DATASETS.
 
 \
 
@@ -232,7 +233,7 @@ district.
 
 [<https://data.london.gov.uk/dataset/office-national-statistics-ons-population-estimates-borough>]{.s1}
 
-[<https://www.ukcrimestats.com/Postcode_Districts/>]{.s1}
+[<https://data.police.uk/data/fetch/159fe36a-b26d-4bb4-882a-803f490a7b2b/>]{.s1}
 
 [<https://developers.google.com/maps/documentation/distance-matrix/overview>]{.s1}[ ]{.Apple-converted-space}
 
