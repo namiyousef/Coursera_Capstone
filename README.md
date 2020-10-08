@@ -36,8 +36,3 @@ This project explores the first part of a multistage project to develop a progra
 
 **Report:**
   Includes the report in multiple formats.
-
-
-
-
-- Lab 3 not done rigorously, need to engage with it more
